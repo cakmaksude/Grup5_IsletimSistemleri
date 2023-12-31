@@ -79,6 +79,10 @@ public class Main {
     public static void main(String[] args) {
     	  Dispatcher dispatcher = new Dispatcher();
     	  BellekTahsisi bellek = new BellekTahsisi(2, 2, 1, 1);
+    	  int timeQuantum = 1;
+
+    	  //Geri beslemeli görevlendirici çağırıldı
+          GBG scheduler = new GBG(3, timeQuantum);
 
           try (BufferedReader reader = new BufferedReader(new FileReader("giris.txt"))) {
               String line;
